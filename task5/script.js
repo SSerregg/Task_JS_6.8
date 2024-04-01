@@ -8,7 +8,8 @@ document.addEventListener('keyup', (event) => {
 document.querySelector('button').addEventListener('click', buttonClick);
 document.querySelector('button').addEventListener('click', buttock);
 
-function buttonClick() {
+function buttonClick(event) {
+    event.preventDefault();
     let button = document.querySelector('#duplicateField').textContent;
     console.log(button);
     document.querySelector('#duplicateField').textContent = '';
